@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JavaMan"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency exchange rates"
+            android:textColor="#fff"
+            android:layout_below="@id/t1"
+            android:textSize="28dp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.04"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_view"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Balance"
+            android:textSize="22dp"
+            android:textColor="#fff"
+            android:paddingLeft="40dp"
+            android:paddingTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₾ 372.00"
+            android:textSize="35dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rates"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#516b9e"
+            android:letterSpacing="0.02"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:textSize="23dp"
+            android:textColor="#D06D88BD"
+            android:gravity="end"
+            android:layout_marginRight="16dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/usd"/>
+
+            <TextView
+                android:id="@+id/tt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USD"
+                android:layout_toRightOf="@+id/i1"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#516b9e"
+                android:layout_marginLeft="20dp"
+                android:letterSpacing="0.03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 US Dollar"
+                android:layout_toRightOf="@+id/i1"
+                android:layout_below="@id/tt1"
+                android:textSize="16dp"
+                android:textColor="#516b9e"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/txt_usd_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="0.00₾"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/r1">
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/eur"/>
+
+            <TextView
+                android:id="@+id/tt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EUR"
+                android:layout_toRightOf="@+id/i2"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#516b9e"
+                android:layout_marginLeft="20dp"
+                android:letterSpacing="0.03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Euro"
+                android:layout_toRightOf="@+id/i2"
+                android:layout_below="@id/tt2"
+                android:textSize="16dp"
+                android:textColor="#516b9e"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/txt_eur_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="0.00₾"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/r2">
+
+            <ImageView
+                android:id="@+id/i3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/gbp"/>
+
+            <TextView
+                android:id="@+id/tt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GBP"
+                android:layout_toRightOf="@+id/i3"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#516b9e"
+                android:layout_marginLeft="20dp"
+                android:letterSpacing="0.03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 United Kingdom Pound"
+                android:layout_toRightOf="@+id/i3"
+                android:layout_below="@id/tt3"
+                android:textSize="16dp"
+                android:textColor="#516b9e"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/txt_gbp_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="0.00₾"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:layout_below="@id/r3">
+
+            <ImageView
+                android:id="@+id/i4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/jpy"/>
+
+            <TextView
+                android:id="@+id/tt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JPY"
+                android:layout_toRightOf="@+id/i4"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#516b9e"
+                android:layout_marginLeft="20dp"
+                android:letterSpacing="0.03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 Japanese Yen"
+                android:layout_toRightOf="@+id/i4"
+                android:layout_below="@id/tt4"
+                android:textSize="16dp"
+                android:textColor="#516b9e"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/txt_jpy_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="0.00₾"
+                android:textColor="#516b9e"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
